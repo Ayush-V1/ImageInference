@@ -307,13 +307,13 @@ def build_demo(embed_mode):
 
         with gr.Row():
             with gr.Column(scale=0):
-                with gr.Row(elem_id="model_selector_row"):
-                    model_selector = gr.Dropdown(
-                        choices="CNSKO Image Inference v1.1.0",
-                        value= "CNSKO Image Inference v1.1.0",
-                        interactive=False,
-                        show_label=False,
-                        container=False)
+                # with gr.Row(elem_id="model_selector_row"):
+                #     model_selector = gr.Dropdown(
+                #         choices="CNSKO Image Inference v1.1.0",
+                #         value= "CNSKO Image Inference v1.1.0",
+                #         interactive=False,
+                #         show_label=False,
+                #         container=False)
 
                 imagebox = gr.Image(type="pil")
                 image_process_mode = gr.Radio(
