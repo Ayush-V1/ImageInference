@@ -281,7 +281,10 @@ def http_bot(state, model_selector, temperature, top_p, max_new_tokens, request:
 title_markdown = ("""
 #  Consenko Image Inference""")
 
-tos_markdown = (""" """)
+tos_markdown = (""" 
+### Disclaimer
+This is test inference by consenko for projecting capabilites of the image projection visual encoder built in coherence to Large Multi Model conversational interface.
+This model is only for demo purpose""")
 
 
 learn_more_markdown = (""" """)
@@ -306,9 +309,9 @@ def build_demo(embed_mode):
             with gr.Column(scale=3):
                 with gr.Row(elem_id="model_selector_row"):
                     model_selector = gr.Dropdown(
-                        choices=models,
-                        value= "Consenko Image Inference v1.1.0",
-                        interactive=True,
+                        choices="CNSKO Image Inference v1.1.0",
+                        value= "CNSKO Image Inference v1.1.0",
+                        interactive=False,
                         show_label=False,
                         container=False)
 
