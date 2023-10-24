@@ -306,7 +306,7 @@ def build_demo(embed_mode):
             gr.Markdown(title_markdown)
 
         with gr.Row():
-            with gr.Column(scale=3):
+            with gr.Column(scale=0):
                 with gr.Row(elem_id="model_selector_row"):
                     model_selector = gr.Dropdown(
                         choices="CNSKO Image Inference v1.1.0",
