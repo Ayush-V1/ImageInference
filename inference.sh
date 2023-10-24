@@ -1,6 +1,14 @@
 #!/bin/bash
 
-cd ImageInference
+# Check if the current directory is ImageInference. If not, change to it.
+if [[ $(basename "$PWD") != "ImageInference" ]]; then
+    if [ -d "ImageInference" ]; then
+        cd ImageInference
+    else
+        echo "Error: ImageInference directory not found!"
+        exit 1
+    fi
+fi
 
 # Install necessary packages
 pip install --upgrade pip
