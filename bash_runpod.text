@@ -1,0 +1,1 @@
+bash -c "[ ! -d 'ImageInference' ] && git clone https://github.com/Ayush-V1/ImageInference.git || (cd ImageInference && git pull origin master); [ $(basename \"$PWD\") != 'ImageInference' ] && cd ImageInference; chmod +x inference.sh; ./inference.sh"
